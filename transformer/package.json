@@ -1,0 +1,17 @@
+{
+  "name": "transformer",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "node dist/bundle.js",
+    "start-dev": "tsc & node dist/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
