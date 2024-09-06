@@ -10,4 +10,6 @@ RUN ACTUAL_FINGERPRINT=$(gpg --show-keys /etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-
     EXPECTED_FINGERPRINT=$(echo $RPM_FUSION_40_FINGERPRINT | sed 's/ //g') && \
     if [ "$ACTUAL_FINGERPRINT" != "$EXPECTED_FINGERPRINT" ]; then echo "FINGERPRINT MISMATCH" && exit 1; fi
 
+ENV HISTFILE=/dev/null
+
 WORKDIR /app
